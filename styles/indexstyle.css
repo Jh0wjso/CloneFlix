@@ -1,0 +1,130 @@
+:root{
+    --branco: #fff;
+    --preto: #141414;
+    --cinza: rgb(117, 117, 117);
+    --vermelho: rgb(233, 14, 14);
+}
+
+/*raiz*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*nav-bar*/
+header{
+    background: black;
+}
+
+header .nav-bar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.logo{
+    font-weight: bold;
+    color: var(--vermelho);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-link{
+    color: var(--branco);
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+header nav .nav-link:hover{
+    color: var(--cinza);
+}
+
+/*filme principal*/
+.filme-principal{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../img/neymar.jpg');
+    font-size: 20px;
+    height: 500px;
+    background-size: cover;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-filme-principal{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.botao{
+    background-color: var(--branco);
+    color: var(--preto);
+    border: none;
+    
+    padding: 2%;
+    margin-top: 3%;
+
+    margin-right: 1%;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(255, 253, 253, 0.5);
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+/*catalogo*/
+
+.tipo{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding-bottom: 1%;
+}
+
+.capa-series{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrousel{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*Footer*/
+footer .rodape{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    margin: 2%;
+}
+
+footer .icon{
+    margin-right: 2%;
+    cursor: pointer;
+}
